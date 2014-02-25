@@ -1,0 +1,25 @@
+ h1 {
+ 	font-family: 'Condiment', cursive;
+ 	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Condiment', cursive;
+
+}
+
+p.by {
+	font-family: 'Condiment', cursive;
+		
+}
+
+p {
+	font-family: Georgia;
+}
+
+a {
+	font-size: 10px;
+}
+a:hover {
+	background-color: red; 
+}
