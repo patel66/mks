@@ -1,0 +1,110 @@
+#methods
+
+def hello 
+	puts "Hello World"
+end
+
+hello
+
+
+def print_name(name)
+
+	puts "My Name is #{name}."
+end
+
+puts "What is you name?"
+name = gets.chomp
+print_name(name)
+
+def add_2(x, y)
+ 	sum = x+=y
+ 	puts sum
+end
+
+puts "Give me a number!"
+num1 = gets.chomp.to_i
+puts "Give me another number to add to it"
+num2 = gets.chomp.to_i
+add_2(num1, num2)
+
+#Iterating through Arrays
+
+city = ["Austin","San Francisco", "Chicago", "New York"]
+
+def city_love(city)
+	city.each do |x|
+		puts "I love #{x}."
+	end
+end
+
+city_love(city)
+
+values = [[4,2,1],[7,9,6],[3,5,9]] 
+def value_viewer(values)
+	puts values 	
+end
+
+value_viewer(values)
+
+#Iterating through Hashes 
+
+info = Hash.new  
+info = {
+	:"city" => "Austin",
+	:"state" => "Texas"
+}
+
+puts info[:"city"] 
+
+my_hash = Hash.new
+my_hash = {first:"Ronak", Last: "Bartley"}
+
+def associated(my_hash)
+	my_hash.each do |key, value| 
+		puts "#{key} is associated with #{value}"
+	end 
+end
+
+associated(my_hash)
+
+
+#Objects and Classes 
+
+class Hair 
+	attr_accessor :color, :length
+	def initialize(color, length)
+		@color = color
+		@length = length
+	end
+end
+
+Hair.new("red")
+
+Hair.new("Blue", "Long")
+
+my_hair = Hair.new("blonde", "long")
+
+my_hair.color ==  "blonde"
+
+Class Person
+	attr_accessor :name
+	def initialize(name)
+		@name = name
+	end
+
+	def says_name
+		names = Array.new 
+		names.push(@name)
+
+		names.each{|x| puts "#{x}"}
+	end
+end
+
+Person.new("Tim")
+Person.new("Jenny")
+Person.new("Sam")
+
+
+
+
+
