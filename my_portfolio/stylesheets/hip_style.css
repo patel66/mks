@@ -6,6 +6,10 @@ p {
 	color: green;
 }
 
+p.second {
+	color: black;
+}
+
 em {
 	color: red;
 }
